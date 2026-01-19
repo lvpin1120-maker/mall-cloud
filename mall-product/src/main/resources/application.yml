@@ -1,0 +1,10 @@
+server:
+  port: 8081  # 商品服务的运行端口
+
+spring:
+  application:
+    name: mall-product  # 这个名字非常重要，以后服务间调用就靠它
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 # 刚才你 Docker 启动的 Nacos 地址
